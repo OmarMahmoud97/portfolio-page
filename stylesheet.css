@@ -1,0 +1,532 @@
+:root {
+  font-size: 16px;
+  font-family: "Open sans";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: grey;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5a36af;
+}
+
+main {
+  margin-left: 7rem;
+  margin-right: 7rem;
+  padding: 1rem;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+.landing-title {
+  z-index: 999;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/****** Navbar ******/
+.img-logo {
+  margin-top: 1rem;
+  width: 8.5rem;
+  transition: width 350ms ease;
+}
+
+.navbar {
+  position: fixed;
+  background-color: black;
+  transition: width 350ms ease;
+  align-items: center;
+}
+
+.fa-brands {
+  transition: width 10s ease;
+}
+
+.navbar-nav {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5.3rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  filter: grayscale(100%) opacity(1);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0) opacity(1);
+  background: #9461b6;
+  color: #ec8355;
+  border-radius: 10%;
+  width: 9.5rem;
+}
+
+.nav-link:hover .link-text {
+  display: block;
+}
+
+.navbar:hover .img-logo {
+  width: 10.5rem;
+}
+
+.link-text {
+  display: none;
+  margin: 0.5rem;
+}
+
+.nav-link svg {
+  min-height: 2rem;
+  margin: 0 1.5rem;
+}
+
+.fa-solid {
+  color: white;
+}
+
+.fa-brands {
+  color: white;
+}
+
+.fa-brands,
+fa-solid {
+  transition: var(--transition-speed);
+}
+/* Landing Page */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100%;
+  line-height: 1.4;
+  background-image: url(img/portfolio-bg12345.svg);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.landing {
+  max-width: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.landing-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 5rem;
+  margin-top: 4rem;
+}
+
+.jetpack {
+  position: absolute;
+  right: 21%;
+  top: 10%;
+  width: 18%;
+  animation: floating ease 7s infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(10%, 0%);
+  }
+  25% {
+    transform: translate(15%, 10%);
+  }
+  50% {
+    transform: translate(10%, 8%);
+  }
+  75% {
+    transform: translate(15%, 5%);
+  }
+  100% {
+    transform: translate(10%, 0%);
+  }
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 2rem 0;
+  background-color: black;
+  color: #5a36af;
+  border: 0.3rem solid black;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.btn:hover {
+  border-color: black;
+  background-color: #323232;
+  color: #5a36af;
+}
+
+/******* About Me ********/
+
+h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.my-name {
+  color: #5a36af;
+  font-weight: bold;
+}
+
+.about-me {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  border: solid purple;
+  border-radius: 10%;
+  margin-bottom: 1rem;
+}
+
+.about-me-p {
+  margin: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+/********* Services******/
+h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Roboto Slab", serif;
+}
+.grid {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.grid-item {
+  background-color: #9461b6;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.services {
+  /* margin: 0 auto; */
+  text-align: center;
+  margin-top: 10rem;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+/* Project */
+h3 {
+  margin-top: 60px;
+}
+.projects-section {
+  font-size: 1.6rem;
+  line-height: 1.3rem;
+  margin: 0 0 4em;
+}
+.project {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  margin: 1em 0;
+  cursor: pointer;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.project figure img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 300px;
+  border-radius: 10px 10px 0 0;
+}
+
+.project figcaption {
+  padding: 1em;
+  background: #9461b6;
+  color: #fff;
+}
+.projects-section {
+  margin-left: 7rem;
+}
+
+.project h5 {
+  color: white;
+  margin: 0;
+}
+.cta {
+  margin: 0.5em 0;
+  font-size: 15px;
+}
+
+/* Contact */
+.contact-container {
+  text-align: center;
+  margin-left: 25%;
+}
+.contact-title {
+  margin-bottom: 2rem;
+}
+
+.form {
+  margin-left: 7rem;
+  padding-bottom: 1rem;
+  width: 50%;
+  height: 100%;
+  margin-left: 7rem;
+  border-color: #323232;
+  border-width: 2px;
+}
+.contact-surname,
+.contact-name {
+  width: 49%;
+  border-radius: 5px;
+  height: 45px;
+  padding-left: 15px;
+  border-color: #323232;
+  border-width: 2px;
+}
+.contact-subject,
+.contact-email {
+  width: 99%;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  height: 45px;
+  padding-left: 15px;
+  border-color: #323232;
+  border-width: 2px;
+}
+.contact-msg {
+  resize: none;
+  width: 99%;
+  height: 140px;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 5px;
+  border-color: #323232;
+  border-width: 2px;
+}
+.contact-btn {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #9461b6;
+  cursor: pointer;
+}
+.contact-btn:hover {
+  color: white;
+  background-color: #5a36af;
+}
+/********* smaller screens **********/
+
+@media only screen and (max-width: 600px) {
+  /**** navbar ****/
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: space-between;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    align-items: normal;
+    justify-content: center;
+  }
+  .link-text {
+    display: none;
+  }
+
+  .nav-item {
+    font-size: 3rem;
+    padding: 0;
+  }
+  .fa-solid {
+    margin-bottom: 1rem;
+  }
+  .fa-solid {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .fa-brands {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    height: 41%;
+    align-items: center;
+  }
+
+  /**** landing small screen ****/
+
+  main {
+    margin: 0;
+  }
+
+  .landing img {
+    width: 80%;
+  }
+
+  .landing-title {
+    font-size: 4rem;
+  }
+  .jetpack {
+    position: absolute;
+    top: 0%;
+    right: 20%;
+  }
+  .btn {
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 2rem 0;
+    background-color: black;
+    color: orange;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1.5rem 2rem;
+    font-family: "Roboto Slab", serif;
+  }
+
+  body {
+    background-image: url(img/portfolio-bg-smallscrn.svg);
+  }
+  /**** About Me ****/
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-me {
+    width: 75%;
+  }
+
+  .about-me-p {
+    font-size: 1.2rem;
+  }
+
+  /* Projects */
+  .projects-section {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .Project-title {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  .wrapper {
+    max-width: 960px;
+    margin: 0 11.2rem;
+  }
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+  }
+  .project {
+    width: 100%;
+    height: 300px;
+    text-decoration: none;
+    margin: 0;
+  }
+  .project figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .project figure img {
+    position: relative;
+    z-index: 999;
+    transition: transform 0.4s;
+  }
+  .project figure:hover img {
+    transform: translateY(-90px);
+  }
+  .project figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    height: 90px;
+    width: 100%;
+  }
+}
